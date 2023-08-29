@@ -1,0 +1,47 @@
+{
+  "name": "vue-splashscreen",
+  "version": "0.0.3",
+  "private": false,
+  "author": {
+    "name": "David Osaro",
+    "email": "afomidavid@gmail.com"
+  },
+  "scripts": {
+    "dev": "vite",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "format": "prettier --write src/",
+    "serve": "vite serve",
+    "build": "vite build",
+    "build-library": "vite build --target lib --name vue-splashscreen ./src/install.js"
+  },
+  "main": "./dist/vue-splashscreen.umd.js",
+  "module": "./dist/vue-splashscreen.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vue-splashscreen.es.js",
+      "require": "./dist/vue-splashscreen.umd.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "vue",
+    "splashscreen",
+    "splash",
+    "preloader"
+  ],
+  "dependencies": {
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.3.2",
+    "@vitejs/plugin-vue": "^4.3.1",
+    "@vue/eslint-config-prettier": "^8.0.0",
+    "eslint": "^8.46.0",
+    "eslint-plugin-vue": "^9.16.1",
+    "prettier": "^3.0.0",
+    "vite": "^4.4.9"
+  }
+}

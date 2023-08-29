@@ -1,0 +1,37 @@
+.show-percentage {
+  display: none;
+  min-width: 180px;
+}
+.show-progress {
+  display: none;
+}
+
+/* PERCENTAGE >>>> */
+.percentage-text {
+  color: white;
+  text-align: center;
+  font-size: 100px;
+  font-family: 'Barlow', sans-serif;
+}
+
+/* <<<< PERCENTAGE */
+
+
+/* PROGRESS >>> */
+.progress-container {
+  width: 400px;
+  height: 4px;
+  background-color: rgba(35, 35, 35, 0.513);
+  border-radius: 4px;
+  /* padding: 3px; */
+  box-sizing: border-box;
+}
+
+.progress {
+  width: 0px;
+  height: 4px;
+  background-color: white;
+  border-radius: 4px;
+  /* box-sizing: border-box; */
+}
+/* <<<< PROGRESS */
