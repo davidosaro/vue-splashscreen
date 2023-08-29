@@ -1,6 +1,6 @@
 {
   "name": "vue-splashscreen",
-  "version": "0.0.3",
+  "version": "0.0.8",
   "private": false,
   "author": {
     "name": "David Osaro",
@@ -12,8 +12,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
     "serve": "vite serve",
-    "build": "vite build",
-    "build-library": "vite build --target lib --name vue-splashscreen ./src/install.js"
+    "build": "vite build"
   },
   "main": "./dist/vue-splashscreen.umd.js",
   "module": "./dist/vue-splashscreen.es.js",
@@ -21,7 +20,8 @@
     ".": {
       "import": "./dist/vue-splashscreen.es.js",
       "require": "./dist/vue-splashscreen.umd.js"
-    }
+    },
+    "./dist/style.css": "./dist/style.css"
   },
   "files": [
     "dist"

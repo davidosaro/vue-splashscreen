@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import SplashScreenComponent from '@/pages/splash/Splash.vue';
+import SplashScreenComponent from '@/splash/Splash.vue';
 
 export default {
   install: (app, options) => {
